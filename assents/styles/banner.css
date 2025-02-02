@@ -1,4 +1,46 @@
-#banner{
+#banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
 
+.description {
+  height: auto;
+  min-height: 452px;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #1D0605E5;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
+.description h1 {
+  font-size: clamp(40px, 8vw, 77px);
+  line-height: 1.1;
+  font-weight: bold;
+  font-family: 'Bungee', cursive;
+}
+
+.description button {
+  background-color: #F43127;
+  color: white;
+  gap: 12px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  max-width: 200px;
+  height: 52px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.description p {
+  margin: 10px 0;
+  font-size: clamp(16px, 2vw, 22px);
 }
