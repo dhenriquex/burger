@@ -2,7 +2,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 50px;
   justify-content: center;
   h3 {
     font-size: 32px;
@@ -28,7 +28,7 @@ footer .socialMidias img{
  filter: hue-rotate(0deg) saturate(1000%) brightness(50%);
 }
 footer .nav-bar{
-    margin: 20px 0;
+    margin: 25px 0;
 }
 .copy{
     margin: 5px 0;

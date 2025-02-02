@@ -27,7 +27,7 @@
   grid-template-columns: 2fr 1fr;
   gap: 20px;
   width: 100%;
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .promocao {
@@ -48,19 +48,24 @@
   height: 200px;
 }
 
-.promocao, .batata, .sorvete {
+.promocao,
+.batata,
+.sorvete {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
 
-.promocao img, .batata img, .sorvete img {
+.promocao img,
+.batata img,
+.sorvete img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.txt-superior, .txt-inferior {
+.txt-superior,
+.txt-inferior {
   position: absolute;
   padding: 15px;
   z-index: 1;
@@ -101,7 +106,7 @@
 
 .batata .txt-superior,
 .sorvete .txt-superior {
-  color: #1D0605E5;
+  color: #1d0605e5;
 }
 
 .batata .txt-superior h3,
@@ -109,4 +114,50 @@
   font-size: 20px;
   line-height: 22px;
   font-weight: bold;
+}
+.moreInformation {
+  display: flex;
+  height: 130px;
+  margin-top: 50px;
+}
+.horario {
+  background-color: #f43127;
+  border-radius: 10px;
+  align-items: center;
+  padding: 30px;
+  display: flex;
+  width: 100%;
+  max-width: 570px;
+  img {
+    height: auto;
+    background-color: #1d060533;
+    border-radius: 100%;
+    padding: 20px;
+  }
+  hr {
+    margin: 0 20px;
+    border: none;
+    background-color: #1d060566;
+    width: 1px;
+    height: 50px;
+  }
+  h3 {
+    color: #1d0605b0;
+    font-size: 25px;
+    line-height: 27px;
+  }
+  color: white;
+}
+.instagram{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    flex-direction: column;
+    h3{
+        font-size: 28px;
+        line-height: 28px;
+        font-weight: bold;
+        color:#F43127 ;
+        text-transform: uppercase;
+    }
 }

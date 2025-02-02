@@ -2,12 +2,14 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   width: 100%;
-  padding: 20px;
+  height: 545px;
   background-image: url("../img/Banner\ 01\ -\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: -68px; /* Compensar a altura do header */
+  padding-top: 88px; /* Espaço para o conteúdo não ficar sob o header */
 }
 
 .description {
@@ -24,6 +26,7 @@
   margin: 0 auto;
   padding: 20px;
 }
+
 
 .description h1 {
   font-size: clamp(40px, 8vw, 77px);
@@ -49,19 +52,17 @@
   margin: 10px 0;
   font-size: clamp(16px, 2vw, 22px);
 }
-.quality{
-    transform: translateY(75px);
-    justify-content: center;
-    display: flex;
-    width: 950px;
-    background-color:#fff ;
-    box-shadow: 0px 4px 40px #B29B8480 ;
-    border-radius: 10px;
-    padding: 30px;
-    justify-content: space-around;
-     hr{
-        margin: 0px 15px;
-    }
+.quality {
+  justify-content: center;
+  display: flex;
+  width: 950px;
+  background-color: #fff;
+  box-shadow: 0px 4px 40px #B29B8480;
+  border-radius: 10px;
+  padding: 30px;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
 }
 .vantagens{
     flex: 1;
