@@ -1,0 +1,112 @@
+.ofertas {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 100px auto 0;
+  padding: 0 20px;
+}
+
+.ofertas h2 {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: bold;
+  color: #1d0605e5;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.ofertas > p {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  width: 100%;
+    margin-top: 10px;
+}
+
+.promocao {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  height: 430px;
+}
+
+.batata {
+  grid-column: 2;
+  grid-row: 1;
+  height: 200px;
+}
+
+.sorvete {
+  grid-column: 2;
+  grid-row: 2;
+  height: 200px;
+}
+
+.promocao, .batata, .sorvete {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.promocao img, .batata img, .sorvete img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.txt-superior, .txt-inferior {
+  position: absolute;
+  padding: 15px;
+  z-index: 1;
+}
+
+.txt-superior {
+  top: 0;
+  left: 0;
+}
+
+.txt-inferior {
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
+.promocao .txt-superior {
+  color: #fff;
+}
+
+.promocao .txt-superior h3 {
+  font-size: 25px;
+  line-height: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.promocao .txt-inferior {
+  color: #fff;
+}
+
+.promocao .txt-inferior h3 {
+  font-size: 25px;
+  line-height: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.batata .txt-superior,
+.sorvete .txt-superior {
+  color: #1D0605E5;
+}
+
+.batata .txt-superior h3,
+.sorvete .txt-superior h3 {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: bold;
+}
